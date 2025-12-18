@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA&B – Premium Digital Marketing Agency | Algeria & MENA</title>
+    <meta name="description" content="Professional digital marketing agency in Algeria offering 10-day free trial for social media management, AI implementation, SEO, and website development.">
+    <meta name="keywords" content="digital marketing Algeria, Algérie marketing digital, social media management, AI implementation, website development Algiers">
+    <meta name="author" content="SMA&B - Shams Marketing Agency & Business">
+    
+    <!-- SEO for Algeria & MENA -->
+    <meta name="geo.region" content="DZ">
+    <meta name="geo.placename" content="Algiers">
+    <meta name="geo.position" content="36.7372;3.0869">
+    <meta name="ICBM" content="36.7372, 3.0869">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SMA&B – Premium Digital Marketing Agency">
+    <meta property="og:description" content="10-Day Free Trial for Algerian Businesses">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        :root {
+            /* Color Palette */
+            --primary-black: #000000;
+            --rich-black: #0A0A0A;
+            --dark-grey: #1A1A1A;
+            --medium-grey: #2D2D2D;
+            --light-grey: #555555;
+            --gold: #D4AF37;
+            --light-gold: #F4D03F;
+            --dark-gold: #B7950B;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            
+            /* Gradients */
+            --gold-gradient: linear-gradient(135deg, var(--gold), var(--light-gold));
+            --dark-gradient: linear-gradient(135deg, var(--primary-black), var(--dark-grey));
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 10px 40px rgba(212, 175, 55, 0.15);
+            --shadow-gold: 0 5px 20px rgba(212, 175, 55, 0.3);
+            
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition-base: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 20px;
+            --radius-full: 50%;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 3rem;
+            --space-xl: 5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background-color: var(--primary-black);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-sm);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--space-sm);
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gold-gradient);
+            border-radius: var(--radius-full);
+        }
+
+        .gold-text {
+            color: var(--gold);
+            background: linear-gradient(135deg, var(--gold), var(--light-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all var(--transition-base);
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.1);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover:before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .btn-large {
+            padding: 18px 40px;
+            font-size: 1.1rem;
+        }
+
+        .btn-xl {
+            padding: 20px 48px;
+            font-size: 1.2rem;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all var(--transition-base);
+        }
+
+        .navbar.scrolled {
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--light-grey);
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all var(--transition-base);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: width var(--transition-base);
+        }
+
+        .nav-menu a:hover:after,
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--gold);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+
+        /* ===== LANGUAGE SWITCHER (ICON) ===== */
+        .language-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            width: 45px;
+            height: 45px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .language-icon:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: scale(1.1);
+        }
+
+        .language-icon i {
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-md);
+            padding: 10px;
+            min-width: 100px;
+            display: none;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow-md);
+        }
+
+        .language-dropdown.active {
+            display: block;
+        }
+
+        .language-dropdown button {
+            background: transparent;
+            border: none;
+            color: var(--white);
+            padding: 8px 12px;
+            width: 100%;
+            text-align: left;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .language-dropdown button:hover {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background: var(--dark-gradient);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-xl);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-grey);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--light-grey);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-visual {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .hero-card {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-badge {
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            padding: 5px 15px;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .card-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .card-features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-features i {
+            color: var(--gold);
+        }
+
+        /* ===== VALUE PROPOSITION ===== */
+        .value-prop {
+            background-color: var(--dark-grey);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--light-grey);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: var(--dark-grey);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
+            text-align: center;
+            transition: all var(--transition-base);
+            border-top: 3px solid var(--gold);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .value-icon i {
+            font-size: 1.8rem;
+            color: var(--gold);
+        }
+
+        /* ===== FREE TRIAL CTA ===== */
+        .trial-cta {
+            background: linear-gradient(to right, var(--primary-black), var(--dark-grey));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trial-cta:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .trial-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(17, 17, 17, 0.9);
+            border-radius: var(--radius-lg);
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-lg);
+            backdrop-filter: blur(10px);
+        }
+
+        .premium-card {
+            animation: pulse 2s infinite;
+        }
+
+        .trial-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            padding: 8px 25px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .trial-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .trial-description {
+            font-size: 1.2rem;
+            color: var(--light-grey);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .trial-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(51, 51, 51, 0.5);
+            padding: 12px 20px;
+            border-radius: 30px;
+        }
+
+        .feature i {
+            font-size: 1.2rem;
+        }
+
+        .trial-note {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--light-grey);
+            font-style: italic;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            background-color: var(--secondary-black);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: var(--dark-grey);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
+            text-align: center;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gold-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-base);
+        }
+
+        .service-card:hover:before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all var(--transition-base);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: rgba(212, 175, 55, 0.2);
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            color: var(--gold);
+            transition: all var(--transition-base);
+        }
+
+        .service-card:hover .service-icon i {
+            transform: scale(1.1);
+        }
+
+        .service-hover {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all var(--transition-base);
+            opacity: 0;
+            font-weight: 600;
+        }
+
+        .service-card:hover .service-hover {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .cta-card {
+            background: linear-gradient(to bottom right, var(--dark-grey), var(--primary-black));
+            border: 2px solid var(--gold);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-card h3 {
+            font-size: 1.8rem;
+        }
+
+        /* ===== FLOATING WHATSAPP BUTTON ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all var(--transition-base);
+            z-index: 999;
+            overflow: hidden;
+        }
+
+        .whatsapp-float:hover {
+            width: 200px;
+            border-radius: var(--radius-lg);
+            background: #128C7E;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-text {
+            display: none;
+            margin-left: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .whatsapp-float:hover .whatsapp-text {
+            display: block;
+        }
+
+        .whatsapp-float i {
+            font-size: 1.8rem;
+            transition: all var(--transition-base);
+        }
+
+        .whatsapp-float:hover i {
+            transform: scale(1.1);
+        }
+
+        /* ===== AI CHATBOT ===== */
+        .chatbot-container {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            background: var(--dark-grey);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        .chatbot-container.active {
+            display: flex;
+        }
+
+        .chatbot-header {
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-langs {
+            display: flex;
+            gap: 5px;
+        }
+
+        .chat-lang {
+            background: rgba(0, 0, 0, 0.2);
+            border: none;
+            color: var(--primary-black);
+            padding: 3px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .chat-lang.active {
+            background: rgba(0, 0, 0, 0.4);
+            font-weight: 600;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .chat-message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: var(--radius-lg);
+            animation: slideIn 0.3s ease;
+        }
+
+        .bot-message {
+            align-self: flex-start;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .user-message {
+            align-self: flex-end;
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+        }
+
+        .chatbot-input {
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            border: none;
+        }
+
+        .chatbot-input input:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        #sendMessage {
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            border: none;
+            border-radius: var(--radius-md);
+            width: 50px;
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        #sendMessage:hover {
+            transform: scale(1.05);
+        }
+
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gold-gradient);
+            color: var(--primary-black);
+            border: none;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-gold);
+            transition: all var(--transition-base);
+            z-index: 999;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .chatbot-toggle i {
+            font-size: 1.5rem;
+        }
+
+        .chatbot-close {
+            background: transparent;
+            border: none;
+            color: var(--primary-black);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== CONTACT FORM ===== */
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--gold);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            transition: all var(--transition-base);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .form-actions .btn {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* ===== WHATSAPP CONTACT SECTION ===== */
+        .whatsapp-contact {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(37, 211, 102, 0.1);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(37, 211, 102, 0.2);
+        }
+
+        .whatsapp-contact h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #25D366;
+        }
+
+        .whatsapp-contact p {
+            font-size: 1.2rem;
+            color: var(--light-grey);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: var(--primary-black);
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 40px;
+            padding-right: 40px;
+        }
+
+        .footer-description {
+            color: var(--light-grey);
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+        .footer-links, .footer-contact {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 40px;
+        }
+
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h3:after, .footer-contact h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--gold);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--light-grey);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+
+        .footer-contact ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .footer-contact li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-contact i {
+            margin-right: 12px;
+            color: var(--gold);
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--dark-grey);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+
+        .social-links a:hover {
+            background-color: var(--gold);
+            color: var(--primary-black);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--light-grey);
+            font-size: 0.9rem;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .hero-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--rich-black);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: left 0.3s ease;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .menu-toggle.active .bar:nth-child(1) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+            
+            .menu-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .menu-toggle.active .bar:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .chatbot-container {
+                width: calc(100% - 60px);
+                height: 400px;
+                right: 30px;
+                left: 30px;
+            }
+            
+            .trial-title {
+                font-size: 2.2rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .footer-brand {
+                padding-right: 0;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+            
+            .form-actions .btn {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .chatbot-toggle {
+                bottom: 90px;
+                left: 20px;
+            }
+            
+            .hero-visual {
+                min-width: 100%;
+            }
+            
+            .trial-card {
+                padding: 40px 20px;
+            }
+            
+            .language-icon {
+                top: 15px;
+                left: 15px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Icon -->
+    <div class="language-icon" id="languageIcon">
+        <i class="fas fa-globe"></i>
+        <div class="language-dropdown" id="languageDropdown">
+            <button data-lang="en">English</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="ar">العربية</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-main">SMA&B</span>
+                <span class="logo-sub">Shams Marketing Agency & Business</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#trial" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Free Trial</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Take Your Business to the <span class="gold-text">Next Level</span></h1>
+                <p class="hero-subtitle">Professional digital marketing solutions that drive measurable growth, increase performance, and maximize ROI for businesses across Algeria and MENA.</p>
+                <div class="hero-buttons">
+                    <a href="#trial" class="btn btn-primary btn-large">Start Free Trial</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+                
+                <!-- Animated Counters -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="40">0</span><span>+</span>
+                        <span class="stat-label">Clients Served</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span><span>%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span>+ Years</span>
+                        <span class="stat-label">Experience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <h3>10-Day Free Trial</h3>
+                        <span class="card-badge">Limited Offer</span>
+                    </div>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Full Service Access</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> Performance Analytics</li>
+                        <li><i class="fas fa-check"></i> No Credit Card Required</li>
+                    </ul>
+                    <a href="#trial" class="btn btn-primary btn-block">Claim Your Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transform Your Digital Presence</h2>
+                <p class="section-subtitle">We combine innovative strategies with cutting-edge technology to deliver measurable results for Algerian businesses.</p>
+            </div>
+            
+            <!-- Embedded Video -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/PhJnZnQuuT0" 
+                            title="SMA&B Agency Introduction" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Value Points -->
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data-Driven Strategies</h3>
+                    <p>We analyze market trends and customer behavior to create targeted campaigns that deliver results.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Implementation</h3>
+                    <p>Rapid deployment of marketing strategies to ensure you stay ahead of the competition.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Our team provides continuous support and optimization to maximize your marketing performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Trial CTA -->
+    <section class="trial-cta" id="trial">
+        <div class="container">
+            <div class="trial-card premium-card">
+                <div class="trial-badge">
+                    <span class="badge-text">Limited Time Offer</span>
+                </div>
+                <h2 class="trial-title">10 Days Free Trial</h2>
+                <p class="trial-description">Experience our premium marketing services risk-free. See measurable results before you commit.</p>
+                
+                <div class="trial-features">
+                    <div class="feature">
+                        <i class="fas fa-check gold-text"></i>
+                        <span>Full access to our services</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check gold-text"></i>
+                        <span>Dedicated account manager</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check gold-text"></i>
+                        <span>Performance analytics report</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check gold-text"></i>
+                        <span>Strategy session with experts</span>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn btn-primary btn-xl">Start Your Free Trial Now</a>
+                
+                <p class="trial-note">No credit card required. Trial starts immediately after consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Comprehensive digital marketing solutions tailored to Algerian business needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Cards with Micro-interactions -->
+                <div class="service-card" data-service="content">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Engaging, high-quality content that tells your brand story and captivates your audience.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="social">
+                    <div class="service-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Strategic social media planning and execution across all major platforms to grow your presence.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="website">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Website Building</h3>
+                    <p>Responsive, conversion-optimized websites that provide exceptional user experiences.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="strategy">
+                    <div class="service-icon">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <h3>Marketing Strategies</h3>
+                    <p>Custom marketing plans designed to achieve your specific business objectives and KPIs.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="ai">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Implementations</h3>
+                    <p>Leverage artificial intelligence for analytics, automation, and personalized customer experiences.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="reports">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Weekly Reports</h3>
+                    <p>Detailed performance analysis and insights to track progress and optimize strategies.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="ads">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Ads Running</h3>
+                    <p>Targeted advertising campaigns across search engines, social media, and display networks.</p>
+                    <div class="service-hover">
+                        <span>Learn more</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="service-card cta-card">
+                    <h3>Ready to Grow?</h3>
+                    <p>Let's discuss how our comprehensive services can transform your business.</p>
+                    <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="value-prop" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Book Your 10 Days Free Trial</h2>
+            <p class="section-subtitle">Fill out the form below and we'll contact you within 24 hours to start your free trial.</p>
+        </div>
+        
+        <div class="trial-card contact-form">
+            <form id="bookingForm" action="https://formspree.io/f/mzdpbbwz" method="POST">
+                <input type="hidden" name="_subject" value="New Free Trial Request - SMA&B">
+                <input type="hidden" name="_template" value="table">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required class="form-control" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="form-control" placeholder="Enter your email address">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="business">Business Description *</label>
+                    <textarea id="business" name="business" required rows="4" class="form-control" placeholder="Tell us about your business, industry, and marketing goals"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Free Trial Request</button>
+                    <a href="https://wa.me/213556354977?text=Hello%20SMA%26B%2C%20I%27m%20interested%20in%20the%2010-day%20free%20trial%20from%20your%20website" 
+                       target="_blank" 
+                       class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                    </a>
+                </div>
+                
+                <p style="text-align: center; color: var(--light-grey); font-size: 0.9rem; margin-top: 20px;">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
+            </form>
+            
+            <div id="formSuccess" style="display: none; text-align: center; padding: 40px;">
+                <i class="fas fa-check-circle" style="font-size: 4rem; color: var(--gold); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 15px;">Thank You!</h3>
+                <p>Your free trial request has been received successfully.</p>
+                <p>We will contact you within 24 hours to start your 10-day free trial.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+const form = document.getElementById("bookingForm");
+const success = document.getElementById("formSuccess");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // prevent default page reload
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            form.style.display = "none"; // hide form
+            success.style.display = "block"; // show success message
+            form.reset();
+        } else {
+            const data = await response.json();
+            alert(data.error || "Oops! There was a problem sending your message.");
+        }
+    } catch (error) {
+        alert("Oops! There was a problem sending your message.");
+        console.error(error);
+    }
+});
+</script>
+
+            <!-- WhatsApp Contact Section -->
+<div class="whatsapp-contact">
+    <h3>Contact Us via WhatsApp</h3>
+    <p>For immediate assistance or quick questions, message us directly on WhatsApp. We respond within minutes during business hours.</p>
+    
+    <form id="whatsappForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+            <input type="text" id="waName" placeholder="Full Name *" required class="form-control">
+            <input type="email" id="waEmail" placeholder="Email *" required class="form-control">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <textarea id="waBusiness" placeholder="Business / Question *" required rows="3" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-xl">
+            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+        </button>
+    </form>
+
+    <p style="margin-top: 20px; font-size: 1rem;">+213 556 354 977</p>
+</div>
+
+<script>
+const waForm = document.getElementById("whatsappForm");
+
+waForm.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = encodeURIComponent(document.getElementById("waName").value);
+    const email = encodeURIComponent(document.getElementById("waEmail").value);
+    const business = encodeURIComponent(document.getElementById("waBusiness").value);
+
+    // Construct WhatsApp message
+    const message = `Hello SMA&B,\nMy name is ${name}\nEmail: ${email}\nBusiness / Question: ${business}`;
+
+    // Open WhatsApp with pre-filled message
+    const waLink = `https://wa.me/213556354977?text=${message}`;
+    window.open(waLink, "_blank");
+});
+</script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-main">SMA&B</span>
+                        <span class="logo-sub">Shams Marketing Agency & Business</span>
+                    </a>
+                    <p class="footer-description">
+                        Professional digital marketing solutions since 2021. Driving business growth through innovation and performance across Algeria and MENA region.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#trial">Free Trial</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> mohallali761@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +213 556 354 977</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Algiers, Algeria</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SMA&B – Shams Marketing Agency & Business. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/213556354977?text=Hello%20SMA%26B%2C%20I%27m%20interested%20in%20the%2010-day%20free%20trial%20from%20your%20website" 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+    </a>
+
+    
+
+    <script>
+        // ===== MAIN JAVASCRIPT =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+            
+            // Close mobile menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Animated counters with updated values
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            if (statNumbers.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = entry.target;
+                            const targetValue = parseInt(target.getAttribute('data-target'));
+                            const duration = 2000;
+                            const increment = targetValue / (duration / 16);
+                            
+                            let currentValue = 0;
+                            const timer = setInterval(() => {
+                                currentValue += increment;
+                                if (currentValue >= targetValue) {
+                                    target.textContent = targetValue;
+                                    clearInterval(timer);
+                                } else {
+                                    target.textContent = Math.floor(currentValue);
+                                }
+                            }, 16);
+                            
+                            observer.unobserve(target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                statNumbers.forEach(stat => {
+                    observer.observe(stat);
+                });
+            }
+            
+            // Language icon functionality
+            const languageIcon = document.getElementById('languageIcon');
+            const languageDropdown = document.getElementById('languageDropdown');
+            
+            if (languageIcon) {
+                languageIcon.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    languageDropdown.classList.toggle('active');
+                });
+                
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function() {
+                    languageDropdown.classList.remove('active');
+                });
+                
+                // Language selection
+                const langButtons = languageDropdown.querySelectorAll('button');
+                langButtons.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const lang = this.getAttribute('data-lang');
+                        
+                        // Show language change message
+                        let message = '';
+                        switch(lang) {
+                            case 'en':
+                                message = 'Language changed to English';
+                                break;
+                            case 'fr':
+                                message = 'Langue changée en Français';
+                                break;
+                            case 'ar':
+                                message = 'تم تغيير اللغة إلى العربية';
+                                break;
+                        }
+                        
+                        // Show temporary notification
+                        showNotification(message);
+                        
+                        // For Arabic, change text direction
+                        if (lang === 'ar') {
+                            document.body.style.direction = 'rtl';
+                            document.body.style.textAlign = 'right';
+                        } else {
+                            document.body.style.direction = 'ltr';
+                            document.body.style.textAlign = 'left';
+                        }
+                        
+                        // Close dropdown
+                        languageDropdown.classList.remove('active');
+                    });
+                });
+            }
+            
+            // Form submission
+            const bookingForm = document.getElementById('bookingForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const business = formData.get('business');
+                    
+                    // Simulate form submission
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate API call delay
+                    setTimeout(() => {
+                        // Hide form, show success message
+                        bookingForm.style.display = 'none';
+                        formSuccess.style.display = 'block';
+                        
+                        // Prepare data for backend
+                        const leadData = {
+                            name: name,
+                            email: email,
+                            business: business,
+                            timestamp: new Date().toISOString(),
+                            source: 'website'
+                        };
+                        
+                        // Send data to backend (simulated)
+                        sendToBackend(leadData);
+                        
+                        // Track conversion
+                        trackConversion(leadData);
+                        
+                    }, 1500);
+                });
+            }
+            
+            // Service card hover effects
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('.service-icon i');
+                    if (icon) {
+                        icon.style.transform = 'scale(1.1)';
+                    }
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('.service-icon i');
+                    if (icon) {
+                        icon.style.transform = 'scale(1)';
+                    }
+                });
+            });
+            
+            // Chatbot functionality
+            const chatbotToggle = document.getElementById('chatbotToggle');
+            const chatbotContainer = document.getElementById('chatbotContainer');
+            const chatInput = document.getElementById('chatInput');
+            const sendMessageBtn = document.getElementById('sendMessage');
+            const chatMessages = document.getElementById('chatMessages');
+            const chatbotClose = document.querySelector('.chatbot-close');
+            
+            if (chatbotToggle) {
+                chatbotToggle.addEventListener('click', function() {
+                    chatbotContainer.classList.toggle('active');
+                });
+                
+                chatbotClose.addEventListener('click', function() {
+                    chatbotContainer.classList.remove('active');
+                });
+                
+                // Chat responses
+                const responses = {
+                    en: {
+                        greeting: "Hello! How can I assist you with SMA&B services today?",
+                        services: "We offer: 1. Content Creation 2. Social Media Management 3. Website Building 4. Marketing Strategies 5. AI Implementation 6. Weekly Reports 7. Ads Running",
+                        trial: "Our 10-day free trial includes full access to one service, a dedicated account manager, and a performance report. No credit card required!",
+                        pricing: "Pricing starts at $299/month for basic packages. Contact us for a custom quote based on your business needs.",
+                        contact: "You can reach us at: Email: mohallali761@gmail.com WhatsApp: +213 556 354 977",
+                        default: "I'm still learning! For detailed questions, please contact our team directly."
+                    },
+                    fr: {
+                        greeting: "Bonjour! Comment puis-je vous aider avec les services SMA&B aujourd'hui?",
+                        services: "Nous offrons: 1. Création de contenu 2. Gestion des médias sociaux 3. Création de site web 4. Stratégies marketing 5. Implémentation IA 6. Rapports hebdomadaires 7. Gestion de publicités",
+                        trial: "Notre essai gratuit de 10 jours comprend un accès complet à un service, un gestionnaire de compte dédié et un rapport de performance. Aucune carte de crédit requise!",
+                        pricing: "Les prix commencent à 299$/mois pour les forfaits de base. Contactez-nous pour un devis personnalisé.",
+                        contact: "Vous pouvez nous joindre à: Email: mohallali761@gmail.com WhatsApp: +213 556 354 977",
+                        default: "J'apprends encore! Pour des questions détaillées, contactez notre équipe directement."
+                    },
+                    ar: {
+                        greeting: "مرحباً! كيف يمكنني مساعدتك في خدمات سمايب اليوم؟",
+                        services: "نحن نقدم: 1. إنشاء المحتوى 2. إدارة وسائل التواصل الاجتماعي 3. بناء المواقع الإلكترونية 4. استراتيجيات التسويق 5. تطبيقات الذكاء الاصطناعي 6. التقارير الأسبوعية 7. إدارة الإعلانات",
+                        trial: "تتضمن النسخة التجريبية المجانية لمدة 10 أيام وصولاً كاملاً إلى خدمة واحدة، ومدير حسابات مخصص، وتقرير أداء. لا حاجة لبطاقة ائتمان!",
+                        pricing: "تبدأ الأسعار من 299 دولارًا شهريًا للحزم الأساسية. اتصل بنا للحصول على عرض أسعار مخصص.",
+                        contact: "يمكنك الوصول إلينا عبر: البريد الإلكتروني: mohallali761@gmail.com واتساب: 213 556 354 977+",
+                        default: "ما زلت أتعلم! للأسئلة التفصيلية، يرجى الاتصال بفريقنا مباشرة."
+                    }
+                };
+                
+                function addMessage(text, isUser = false) {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.className = `chat-message ${isUser ? 'user-message' : 'bot-message'}`;
+                    
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'message-content';
+                    contentDiv.textContent = text;
+                    
+                    messageDiv.appendChild(contentDiv);
+                    chatMessages.appendChild(messageDiv);
+                    
+                    // Scroll to bottom
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+                
+                function getBotResponse(message) {
+                    const lang = document.querySelector('.chat-lang.active').getAttribute('data-lang');
+                    const langResponses = responses[lang] || responses.en;
+                    
+                    message = message.toLowerCase();
+                    
+                    if (message.includes('hello') || message.includes('hi') || message.includes('bonjour') || message.includes('مرحبا')) {
+                        return langResponses.greeting;
+                    } else if (message.includes('service') || message.includes('خدم') || message.includes('offre')) {
+                        return langResponses.services;
+                    } else if (message.includes('trial') || message.includes('free') || message.includes('تجريب') || message.includes('gratuit')) {
+                        return langResponses.trial;
+                    } else if (message.includes('price') || message.includes('cost') || message.includes('سعر') || message.includes('prix')) {
+                        return langResponses.pricing;
+                    } else if (message.includes('contact') || message.includes('email') || message.includes('واتساب') || message.includes('contacter')) {
+                        return langResponses.contact;
+                    } else {
+                        return langResponses.default;
+                    }
+                }
+                
+                sendMessageBtn.addEventListener('click', function() {
+                    const message = chatInput.value.trim();
+                    if (message) {
+                        addMessage(message, true);
+                        chatInput.value = '';
+                        
+                        // Simulate bot thinking
+                        setTimeout(() => {
+                            const response = getBotResponse(message);
+                            addMessage(response);
+                        }, 500);
+                    }
+                });
+                
+                chatInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        sendMessageBtn.click();
+                    }
+                });
+                
+                // Chat language switching
+                const chatLangButtons = document.querySelectorAll('.chat-lang');
+                chatLangButtons.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        chatLangButtons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Add language change message
+                        const lang = this.getAttribute('data-lang');
+                        const langNames = { en: 'English', fr: 'French', ar: 'Arabic' };
+                        addMessage(`Language switched to ${langNames[lang] || lang}`);
+                    });
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Notification function
+            function showNotification(message) {
+                const notification = document.createElement('div');
+                notification.style.position = 'fixed';
+                notification.style.top = '80px';
+                notification.style.left = '50%';
+                notification.style.transform = 'translateX(-50%)';
+                notification.style.backgroundColor = 'var(--gold)';
+                notification.style.color = 'var(--primary-black)';
+                notification.style.padding = '12px 24px';
+                notification.style.borderRadius = 'var(--radius-md)';
+                notification.style.boxShadow = 'var(--shadow-md)';
+                notification.style.zIndex = '10000';
+                notification.style.fontWeight = '600';
+                notification.textContent = message;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    notification.style.transition = 'opacity 0.5s';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 500);
+                }, 3000);
+            }
+        });
+        
+        // ===== BACKEND FUNCTIONS =====
+        function sendToBackend(data) {
+            // In a real implementation, this would be a fetch() to your backend
+            console.log('Sending to backend:', data);
+            
+            // Simulate sending to PHP/Node backend
+            setTimeout(() => {
+                console.log('Backend received:', data);
+            }, 500);
+        }
+        
+        function trackConversion(data) {
+            // Google Analytics event (placeholder)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+                    'value': 1.0,
+                    'currency': 'USD',
+                    'transaction_id': data.email + '-' + Date.now()
+                });
+            }
+            
+            // Facebook Pixel event (placeholder)
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    value: 1.00,
+                    currency: 'USD',
+                    content_name: 'Free Trial Request'
+                });
+            }
+            
+            console.log('Conversion tracked:', data);
+        }
+        
+        // ===== ANALYTICS PLACEHOLDERS =====
+        // Google Analytics (replace with your actual ID)
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        
+        // Facebook Pixel (replace with your actual ID)
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'FB_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=FB_PIXEL_ID&ev=PageView&noscript=1"></noscript>
+</body>
+</html>
