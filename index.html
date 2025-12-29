@@ -1833,59 +1833,11 @@ form.addEventListener("submit", async function (e) {
                 });
             }
             
-            // Language icon functionality
-            const languageIcon = document.getElementById('languageIcon');
-            const languageDropdown = document.getElementById('languageDropdown');
             
-            if (languageIcon) {
-                languageIcon.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    languageDropdown.classList.toggle('active');
-                });
                 
-                // Close dropdown when clicking outside
-                document.addEventListener('click', function() {
-                    languageDropdown.classList.remove('active');
-                });
                 
-                // Language selection
-                const langButtons = languageDropdown.querySelectorAll('button');
-                langButtons.forEach(btn => {
-                    btn.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        const lang = this.getAttribute('data-lang');
                         
-                        // Show language change message
-                        let message = '';
-                        switch(lang) {
-                            case 'en':
-                                message = 'Language changed to English';
-                                break;
-                            case 'fr':
-                                message = 'Langue changée en Français';
-                                break;
-                            case 'ar':
-                                message = 'تم تغيير اللغة إلى العربية';
-                                break;
-                        }
-                        
-                        // Show temporary notification
-                        showNotification(message);
-                        
-                        // For Arabic, change text direction
-                        if (lang === 'ar') {
-                            document.body.style.direction = 'rtl';
-                            document.body.style.textAlign = 'right';
-                        } else {
-                            document.body.style.direction = 'ltr';
-                            document.body.style.textAlign = 'left';
-                        }
-                        
-                        // Close dropdown
-                        languageDropdown.classList.remove('active');
-                    });
-                });
-            }
+                      
             
             // Form submission
             const bookingForm = document.getElementById('bookingForm');
@@ -1950,121 +1902,9 @@ form.addEventListener("submit", async function (e) {
                 });
             });
             
-            // Chatbot functionality
-            const chatbotToggle = document.getElementById('chatbotToggle');
-            const chatbotContainer = document.getElementById('chatbotContainer');
-            const chatInput = document.getElementById('chatInput');
-            const sendMessageBtn = document.getElementById('sendMessage');
-            const chatMessages = document.getElementById('chatMessages');
-            const chatbotClose = document.querySelector('.chatbot-close');
             
-            if (chatbotToggle) {
-                chatbotToggle.addEventListener('click', function() {
-                    chatbotContainer.classList.toggle('active');
-                });
                 
-                chatbotClose.addEventListener('click', function() {
-                    chatbotContainer.classList.remove('active');
-                });
                 
-                // Chat responses
-                const responses = {
-                    en: {
-                        greeting: "Hello! How can I assist you with SMA&B services today?",
-                        services: "We offer: 1. Content Creation 2. Social Media Management 3. Website Building 4. Marketing Strategies 5. AI Implementation 6. Weekly Reports 7. Ads Running",
-                        trial: "Our 10-day free trial includes full access to one service, a dedicated account manager, and a performance report. No credit card required!",
-                        pricing: "Pricing starts at $299/month for basic packages. Contact us for a custom quote based on your business needs.",
-                        contact: "You can reach us at: Email: mohallali761@gmail.com WhatsApp: +213 556 354 977",
-                        default: "I'm still learning! For detailed questions, please contact our team directly."
-                    },
-                    fr: {
-                        greeting: "Bonjour! Comment puis-je vous aider avec les services SMA&B aujourd'hui?",
-                        services: "Nous offrons: 1. Création de contenu 2. Gestion des médias sociaux 3. Création de site web 4. Stratégies marketing 5. Implémentation IA 6. Rapports hebdomadaires 7. Gestion de publicités",
-                        trial: "Notre essai gratuit de 10 jours comprend un accès complet à un service, un gestionnaire de compte dédié et un rapport de performance. Aucune carte de crédit requise!",
-                        pricing: "Les prix commencent à 299$/mois pour les forfaits de base. Contactez-nous pour un devis personnalisé.",
-                        contact: "Vous pouvez nous joindre à: Email: mohallali761@gmail.com WhatsApp: +213 556 354 977",
-                        default: "J'apprends encore! Pour des questions détaillées, contactez notre équipe directement."
-                    },
-                    ar: {
-                        greeting: "مرحباً! كيف يمكنني مساعدتك في خدمات سمايب اليوم؟",
-                        services: "نحن نقدم: 1. إنشاء المحتوى 2. إدارة وسائل التواصل الاجتماعي 3. بناء المواقع الإلكترونية 4. استراتيجيات التسويق 5. تطبيقات الذكاء الاصطناعي 6. التقارير الأسبوعية 7. إدارة الإعلانات",
-                        trial: "تتضمن النسخة التجريبية المجانية لمدة 10 أيام وصولاً كاملاً إلى خدمة واحدة، ومدير حسابات مخصص، وتقرير أداء. لا حاجة لبطاقة ائتمان!",
-                        pricing: "تبدأ الأسعار من 299 دولارًا شهريًا للحزم الأساسية. اتصل بنا للحصول على عرض أسعار مخصص.",
-                        contact: "يمكنك الوصول إلينا عبر: البريد الإلكتروني: mohallali761@gmail.com واتساب: 213 556 354 977+",
-                        default: "ما زلت أتعلم! للأسئلة التفصيلية، يرجى الاتصال بفريقنا مباشرة."
-                    }
-                };
-                
-                function addMessage(text, isUser = false) {
-                    const messageDiv = document.createElement('div');
-                    messageDiv.className = `chat-message ${isUser ? 'user-message' : 'bot-message'}`;
-                    
-                    const contentDiv = document.createElement('div');
-                    contentDiv.className = 'message-content';
-                    contentDiv.textContent = text;
-                    
-                    messageDiv.appendChild(contentDiv);
-                    chatMessages.appendChild(messageDiv);
-                    
-                    // Scroll to bottom
-                    chatMessages.scrollTop = chatMessages.scrollHeight;
-                }
-                
-                function getBotResponse(message) {
-                    const lang = document.querySelector('.chat-lang.active').getAttribute('data-lang');
-                    const langResponses = responses[lang] || responses.en;
-                    
-                    message = message.toLowerCase();
-                    
-                    if (message.includes('hello') || message.includes('hi') || message.includes('bonjour') || message.includes('مرحبا')) {
-                        return langResponses.greeting;
-                    } else if (message.includes('service') || message.includes('خدم') || message.includes('offre')) {
-                        return langResponses.services;
-                    } else if (message.includes('trial') || message.includes('free') || message.includes('تجريب') || message.includes('gratuit')) {
-                        return langResponses.trial;
-                    } else if (message.includes('price') || message.includes('cost') || message.includes('سعر') || message.includes('prix')) {
-                        return langResponses.pricing;
-                    } else if (message.includes('contact') || message.includes('email') || message.includes('واتساب') || message.includes('contacter')) {
-                        return langResponses.contact;
-                    } else {
-                        return langResponses.default;
-                    }
-                }
-                
-                sendMessageBtn.addEventListener('click', function() {
-                    const message = chatInput.value.trim();
-                    if (message) {
-                        addMessage(message, true);
-                        chatInput.value = '';
-                        
-                        // Simulate bot thinking
-                        setTimeout(() => {
-                            const response = getBotResponse(message);
-                            addMessage(response);
-                        }, 500);
-                    }
-                });
-                
-                chatInput.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') {
-                        sendMessageBtn.click();
-                    }
-                });
-                
-                // Chat language switching
-                const chatLangButtons = document.querySelectorAll('.chat-lang');
-                chatLangButtons.forEach(btn => {
-                    btn.addEventListener('click', function() {
-                        chatLangButtons.forEach(b => b.classList.remove('active'));
-                        this.classList.add('active');
-                        
-                        // Add language change message
-                        const lang = this.getAttribute('data-lang');
-                        const langNames = { en: 'English', fr: 'French', ar: 'Arabic' };
-                        addMessage(`Language switched to ${langNames[lang] || lang}`);
-                    });
-                });
-            }
             
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
