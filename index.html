@@ -1708,45 +1708,7 @@ form.addEventListener("submit", async function (e) {
 });
 </script>
 
-            <!-- WhatsApp Contact Section -->
-<div class="whatsapp-contact">
-    <h3>Contact Us via WhatsApp</h3>
-    <p>For immediate assistance or quick questions, message us directly on WhatsApp. We respond within minutes during business hours.</p>
-    
-    <form id="whatsappForm">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
-            <input type="text" id="waName" placeholder="Full Name *" required class="form-control">
-            <input type="email" id="waEmail" placeholder="Email *" required class="form-control">
-        </div>
-        <div style="margin-bottom: 15px;">
-            <textarea id="waBusiness" placeholder="Business / Question *" required rows="3" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-whatsapp btn-xl">
-            <i class="fab fa-whatsapp"></i> Send via WhatsApp
-        </button>
-    </form>
 
-    <p style="margin-top: 20px; font-size: 1rem;">+213 556 354 977</p>
-</div>
-
-<script>
-const waForm = document.getElementById("whatsappForm");
-
-waForm.addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const name = encodeURIComponent(document.getElementById("waName").value);
-    const email = encodeURIComponent(document.getElementById("waEmail").value);
-    const business = encodeURIComponent(document.getElementById("waBusiness").value);
-
-    // Construct WhatsApp message
-    const message = `Hello SMA&B,\nMy name is ${name}\nEmail: ${email}\nBusiness / Question: ${business}`;
-
-    // Open WhatsApp with pre-filled message
-    const waLink = `https://wa.me/213556354977?text=${message}`;
-    window.open(waLink, "_blank");
-});
-</script>
 
 
     <!-- Footer -->
